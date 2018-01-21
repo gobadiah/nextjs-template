@@ -1,0 +1,8 @@
+{
+  "nav": {
+    "linkFR": "Go french ou français",
+    "linkEN": "Stay british fish & chips"
+  },
+  "Hello": "Salut !",
+  "Wrong email": "{{value}} est une mauvaise adresse mail"
+}

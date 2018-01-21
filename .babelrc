@@ -1,0 +1,11 @@
+{
+  "presets": ["next/babel", "env"],
+  "plugins": [
+    ["transform-inline-env-vars", {
+      "include": [
+        "WEB_URL",
+        "NODE_ENV"
+      ]
+    }]
+  ]
+}
