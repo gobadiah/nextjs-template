@@ -10,6 +10,7 @@ This is a base project supposed to be working with a [json api](http://jsonapi.o
 * [redux-json-api](https://github.com/stonecircle/redux-json-api) for communicating with the json api `application/vnd.api+json`.
 * [passport](passportjs.org) for social login.
 * [emotion](https://emotion.sh/) for styling.
+* [jest](https://facebook.github.io/jest/) for testing.
 * And of course ... [react](https://reactjs.org/)
 
 ## Usage
