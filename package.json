@@ -1,7 +1,7 @@
 {
-  "name": "kincub-web",
+  "name": "nextjs-template",
   "version": "0.1.0",
-  "description": "Kincub Website",
+  "description": "A nextjs template project",
   "main": "index.js",
   "author": "Michaël Journo <gobadiah@gmail.com>",
   "license": "MIT",
