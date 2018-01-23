@@ -13,24 +13,29 @@ const Index = (props) => {
   const val = someKey * 2;
 
   return (
-    <div>
-      {t('index:welcome')}
-      {t('index:hello-world')}
-      {t('index:bye-world')}
-      {val}
-      <Link href="/contact">
+    <div
+      css='
+        display: flex;
+        flex-direction: column;
+      '
+    >
+      <div>{t('index:welcome')}</div>
+      <div>{t('index:hello-world')}</div>
+      <div>{t('index:bye-world')}</div>
+      <div>{val}</div>
+      <Link href='/contact'>
         <a>Contact Form</a>
       </Link>
-      <Link href="/users?some=value">
+      <Link href='/users?some=value'>
         <a>See the api</a>
       </Link>
-      <Link href="/signup">
+      <Link href='/signup'>
         <a>SignUp</a>
       </Link>
-      <Link href="/signin">
+      <Link href='/signin'>
         <a>SignIn</a>
       </Link>
-      <Link href="/signout">
+      <Link href='/signout'>
         <a>SignOut</a>
       </Link>
     </div>

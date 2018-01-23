@@ -6,7 +6,7 @@
   "author": "Michaël Journo <gobadiah@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 npx babel-node bin/server.js",
+    "dev": "npx babel-node bin/server.js",
     "build": "rm -rf dist; NODE_ENV=production npx babel --copy-files --ignore node_modules,dist,pages -d dist .; next build",
     "start": "NODE_ENV=production node dist/bin/server.js",
     "test": "jest"
@@ -14,10 +14,13 @@
   "dependencies": {
     "axios": "^0.17.1",
     "babel-cli": "^6.26.0",
+    "babel-plugin-emotion": "^8.0.12",
     "babel-plugin-transform-inline-env-vars": "^1.0.1",
     "babel-plugin-transform-node-env-inline": "^0.2.0",
     "cookie": "^0.3.1",
     "cookie-parser": "^1.4.3",
+    "emotion": "^8.0.12",
+    "emotion-server": "^8.0.12",
     "eslint-plugin-jest": "^21.7.0",
     "express": "^4.16.2",
     "express-http-proxy": "^1.1.0",
@@ -36,6 +39,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-emotion": "^8.0.12",
     "react-i18next": "^7.3.0",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
@@ -54,7 +58,6 @@
     "jest": "^22.1.4"
   },
   "jest": {
-    "moduleNameMapper": {
-    }
+    "moduleNameMapper": {}
   }
 }
