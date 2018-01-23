@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
+
 import { setState } from '../config/redux';
 
 import hoc from '../utils/hoc';
