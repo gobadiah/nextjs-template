@@ -5,8 +5,8 @@ import { hydrateStore, readEndpoint } from 'redux-json-api';
 import config from '../config';
 import { signedIn } from '../config/redux';
 
-const handleUnauthorized = ({ err, res, asPath }) => {
-  if (err.response.status !== 401) {
+export const handleUnauthorized = ({ err, res, asPath }) => {
+  if (!err || !err.response || !err.response.status || err.response.status !== 401) {
     throw err;
   } else if (res) {
     res.redirect(302, `/signin?returnUrl=${asPath}`);

@@ -1,5 +1,6 @@
 {
-    "extends": "airbnb",
+    "extends": ["airbnb", "plugin:jest/recommended"],
+    "plugins": ["jest"],
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "jsx-a11y/label-has-for": [ 2, {
